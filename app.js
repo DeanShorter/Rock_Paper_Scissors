@@ -53,17 +53,11 @@ function getResult(){
     else if(userSelection == "rock" && opponentSelection == "paper"){
         outcome.innerHTML = "You Lost!";
     }
-    else if(userSelection == "rock" && opponentSelection == "rock"){
-        outcome.innerHTML = "Draw!";
-    }
     else if(userSelection == "scissors" && opponentSelection == "paper"){
         outcome.innerHTML = "You Won!";
     }
     else if(userSelection == "scissors" && opponentSelection == "rock"){
         outcome.innerHTML = "You Lost!";
-    }
-    else if(userSelection == "scissors" && opponentSelection == "scissors"){
-        outcome.innerHTML = "Draw!";
     }
     else if(userSelection == "paper" && opponentSelection == "rock"){
     outcome.innerHTML = "You Won!";
@@ -71,7 +65,7 @@ function getResult(){
     else if(userSelection == "paper" && opponentSelection == "scissors"){
     outcome.innerHTML = "You Lost!";
     }
-    else if(userSelection == "paper" && opponentSelection == "paper"){
+    else if(userSelection == opponentSelection){
     outcome.innerHTML = "Draw!";
     }
     else {
